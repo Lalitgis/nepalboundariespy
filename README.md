@@ -182,8 +182,8 @@ districts.drop(columns="geometry").to_csv("nepal_districts.csv", index=False)
 Nepal (Country)
 └── 7 Provinces
     └── 77 Districts
-        └── 753 Municipalities / Rural Municipalities
-            └── 6 743 Wards
+        └── 753 Municipalities / Rural Municipalities + Procted Areas of Nepal
+            └── 6743 Wards
 ```
 
 All data is projected to **WGS84 (EPSG:4326)**.
@@ -200,7 +200,7 @@ All data is projected to **WGS84 (EPSG:4326)**.
 
 ---
 
-## Preparing / updating the data
+## Preparing/updating the data
 
 The package expects GeoJSON files in `nepalboundaries/data/`.  
 Use the provided script to convert your raw boundary files:
@@ -259,10 +259,10 @@ MIT — see [LICENSE](LICENSE) for details.
 ## Citation
 
 ```bibtex
-@software{nepalboundaries2024,
+@software{nepalboundaries2026,
   title   = {nepalboundaries: Administrative Boundaries of Nepal},
   author  = {Lalit},
-  year    = {2024},
+  year    = {2026},
   url     = {https://github.com/Lalitgis/nepalboundaries}
 }
 ```
