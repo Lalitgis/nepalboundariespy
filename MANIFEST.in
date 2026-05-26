@@ -1,7 +1,0 @@
-include README.md
-include LICENSE
-include CHANGELOG.md
-recursive-include nepalboundaries/data *.geojson *.json
-recursive-include tests *.py
-recursive-include examples *.py
-recursive-include scripts *.py
