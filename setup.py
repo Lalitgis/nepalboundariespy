@@ -10,7 +10,7 @@ long_description = (HERE / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="nepalboundariespy",
-    version="0.1.0",
+    version="0.1.1",
     author="Lalit",
     author_email="lalitiaas@gmail.com",
     description="Administrative boundaries of Nepal at country, province, district, municipality, and ward level",
