@@ -12,7 +12,7 @@
 [![PyPI version](https://badge.fury.io/py/nepalboundaries.svg)](https://pypi.org/project/nepalboundaries/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![GitHub Issues](https://img.shields.io/github/issues/Lalitgis/nepalboundaries)](https://github.com/Lalitgis/nepalboundaries/issues)
+[![GitHub Issues](https://img.shields.io/github/issues/Lalitgis/nepalboundariespy)](https://github.com/Lalitgis/nepalboundariespy/issues)
 
 Inspired by [rgeoboundaries](https://github.com/wmgeolab/rgeoboundaries) but tailored specifically for Nepal — standardised column names, WGS84 projection, and hierarchical filtering baked in.
 
