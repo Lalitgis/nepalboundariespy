@@ -1,0 +1,27 @@
+# Verify everything before pushing
+ls setup.py MANIFEST.in pyproject.toml README.md tests/
+ls nepalboundaries/data/
+
+# Should show all files present
+
+# Fix README if needed (check for wrong URLs)
+grep "nepalboundaries\"" README.md
+
+# If it shows results, manually fix those 2 lines to "nepalboundariespy"
+
+# Commit everything
+git add pyproject.toml setup.py README.md tests/
+git commit -m "Add pyproject.toml, fix setup.py and README URLs, add tests"
+git push origin main
+
+# Wait 30 seconds for GitHub to update
+
+# Then build and upload
+pip install build twine
+python -m build
+
+# Check if dist/ folder created
+ls dist/
+
+# Upload to PyPI
+twine upload dist/*
