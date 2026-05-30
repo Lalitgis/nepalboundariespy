@@ -5,7 +5,7 @@ ls nepalboundaries/data/
 # Should show all files present
 
 # Fix README if needed (check for wrong URLs)
-grep "nepalboundaries\"" README.md
+grep "nepalboundariespy\"" README.md
 
 # If it shows results, manually fix those 2 lines to "nepalboundariespy"
 
