@@ -1,6 +1,13 @@
-# nepalboundariespy
+# NP nepalboundaries.py
 
 **Administrative boundaries of Nepal for Python** — country, province, district, municipality, and ward level, all in a single `pip install`.
+
+<p align="center">
+  <img src="logo.png" width="180"/>
+</p>
+
+<p align="center">
+
 
 [![PyPI version](https://badge.fury.io/py/nepalboundaries.svg)](https://pypi.org/project/nepalboundaries/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -8,6 +15,8 @@
 [![GitHub Issues](https://img.shields.io/github/issues/Lalitgis/nepalboundaries)](https://github.com/Lalitgis/nepalboundaries/issues)
 
 Inspired by [rgeoboundaries](https://github.com/wmgeolab/rgeoboundaries) but tailored specifically for Nepal — standardised column names, WGS84 projection, and hierarchical filtering baked in.
+
+[logo]
 
 ---
 
