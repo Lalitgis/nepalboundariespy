@@ -1,4 +1,4 @@
-# nepalboundaries
+# nepalboundariespy
 
 **Administrative boundaries of Nepal for Python** — country, province, district, municipality, and ward level, all in a single `pip install`.
 
@@ -15,13 +15,13 @@ Inspired by [rgeoboundaries](https://github.com/wmgeolab/rgeoboundaries) but tai
 
 ```bash
 # From GitHub (latest)
-pip install git+https://github.com/Lalitgis/nepalboundaries.git
+pip install git+https://github.com/Lalitgis/nepalboundariespy.git
 
 # From PyPI (when published)
-pip install nepalboundaries
+pip install nepalboundariespy
 
 # With visualisation extras (matplotlib + folium)
-pip install nepalboundaries[viz]
+pip install nepalboundariespy[viz]
 ```
 
 **Requirements:** Python ≥ 3.8, geopandas ≥ 0.10, shapely ≥ 1.8, pandas ≥ 1.0
@@ -31,7 +31,7 @@ pip install nepalboundaries[viz]
 ## Quick start
 
 ```python
-import nepalboundaries as nb
+import nepalboundariespy as nb
 
 # All 7 provinces
 provinces = nb.get_province()
@@ -88,7 +88,7 @@ All functions accept a **single string** or a **list of strings** for each filte
 ### Filtering
 
 ```python
-import nepalboundaries as nb
+import nepalboundariespy as nb
 
 # Single filter
 bhaktapur = nb.get_district("Bhaktapur")
@@ -107,7 +107,7 @@ bagmati_wards = nb.get_ward(province="Bagmati")
 
 ```python
 import matplotlib.pyplot as plt
-import nepalboundaries as nb
+import nepalboundariespy as nb
 
 fig, axes = plt.subplots(1, 2, figsize=(16, 6))
 
@@ -125,7 +125,7 @@ plt.show()
 
 ```python
 import folium
-import nepalboundaries as nb
+import nepalboundariespy as nb
 
 m = folium.Map(location=[28.3949, 84.1240], zoom_start=7)
 
@@ -144,7 +144,7 @@ m.save("nepal_districts.html")
 ```python
 import geopandas as gpd
 from shapely.geometry import Point
-import nepalboundaries as nb
+import nepalboundariespy as nb
 
 # Point-in-polygon: which district contains Kathmandu Durbar Square?
 point = gpd.GeoDataFrame(
@@ -162,7 +162,7 @@ print(neighbours["district_name"].tolist())
 ### Export data
 
 ```python
-import nepalboundaries as nb
+import nepalboundariespy as nb
 
 districts = nb.get_district()
 
@@ -215,8 +215,8 @@ python scripts/data_preparation_python.py
 ## Repository structure
 
 ```
-nepalboundaries/                  ← GitHub repo root
-├── nepalboundaries/              ← Python package
+nepalboundariespy/                  ← GitHub repo root
+├── nepalboundariespy/              ← Python package
 │   ├── __init__.py
 │   ├── core.py
 │   └── data/
@@ -259,11 +259,11 @@ MIT — see [LICENSE](LICENSE) for details.
 ## Citation
 
 ```bibtex
-@software{nepalboundaries2026,
-  title   = {nepalboundaries: Administrative Boundaries of Nepal},
-  author  = {Lalit},
+@software{nepalboundariespy2026,
+  title   = {nepalboundariespy: Administrative Boundaries of Nepal},
+  author  = {BC Lalit},
   year    = {2026},
-  url     = {https://github.com/Lalitgis/nepalboundaries}
+  url     = {https://github.com/Lalitgis/nepalboundariespy}
 }
 ```
 
