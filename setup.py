@@ -1,5 +1,5 @@
 """
-setup.py for nepalboundaries
+setup.py for nepalboundariespy
 """
 
 from pathlib import Path
@@ -9,17 +9,17 @@ HERE = Path(__file__).parent
 long_description = (HERE / "README.md").read_text(encoding="utf-8")
 
 setup(
-    name="nepalboundaries",
+    name="nepalboundariespy",
     version="0.1.0",
     author="Lalit",
     author_email="lalitiaas@gmail.com",
     description="Administrative boundaries of Nepal at country, province, district, municipality, and ward level",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Lalitgis/nepalboundaries",
+    url="https://github.com/Lalitgis/nepalboundariespy",
     project_urls={
-        "Bug Tracker": "https://github.com/Lalitgis/nepalboundaries/issues",
-        "Source Code": "https://github.com/Lalitgis/nepalboundaries",
+        "Bug Tracker": "https://github.com/Lalitgis/nepalboundariespy/issues",
+        "Source Code": "https://github.com/Lalitgis/nepalboundariespy",
     },
     license="MIT",
     packages=find_packages(),
@@ -58,7 +58,7 @@ setup(
     },
     include_package_data=True,
     package_data={
-        "nepalboundaries": [
+        "nepalboundariespy": [
             "data/*.geojson",
             "data/*.json",
         ],
