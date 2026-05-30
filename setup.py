@@ -58,7 +58,7 @@ setup(
     },
     include_package_data=True,
     package_data={
-        "nepalboundariespy": [
+        "nepalboundaries": [
             "data/*.geojson",
             "data/*.json",
         ],
