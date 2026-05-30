@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+recursive-include nepalboundaries/data *.geojson
+recursive-include nepalboundaries/data *.json
